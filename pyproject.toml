@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel", "setuptools_scm"]  # Build requirements
+
+[project]
+name = "pyanalytics" # name of the package must match the core folder name
+version = "0.1.0"
+description = "A basic python package."
+readme = "README.md"
+requires-python = ">=3.10"
+
+# Runtime dependencies
+dependencies = [
+    "jupyter",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "yfinance",
+    "pytest"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
